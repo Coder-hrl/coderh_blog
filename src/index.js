@@ -4,8 +4,7 @@ import store from './store/index'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import App from './App'
-import 'normalize.css'
-import 'antd/dist/antd.min.css'
+import './assets/scss/global.scss'
 
 const root = createRoot(document.getElementById('root'))
 root.render(
