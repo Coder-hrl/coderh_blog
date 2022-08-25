@@ -1,6 +1,9 @@
 @import 'normalize.css';
 @import 'antd/dist/antd.min.css';
 
-#root {
-  background-color: red;
+html,
+#root,
+.app {
+  width: 100%;
+  height: 100%;
 }
