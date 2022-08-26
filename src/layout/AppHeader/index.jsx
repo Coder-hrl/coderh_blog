@@ -1,21 +1,25 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Menu } from 'antd'
 
 import { AppHeaderSwpper } from './style'
+import { routes } from '../../router/router.config'
 
 function AppHeader() {
-  const items1 = ['1', '2', '3'].map((key) => ({
-    key,
-    label: `nav ${key}`,
-  }))
+  const navigate = useNavigate()
+  const selectRoute = (item, key, keyPath) => {
+    navigate(`${item.key}`)
+  }
+
   return (
     <AppHeaderSwpper>
-      <h2>coderh个人博客</h2>
+      <h2 onClick={() => navigate('Home')}>coderh个人博客</h2>
       <Menu
+        className="menu"
         theme="dark"
         mode="horizontal"
-        defaultSelectedKeys={['2']}
-        items={items1}
+        items={routes}
+        onSelect={selectRoute}
       />
     </AppHeaderSwpper>
   )
