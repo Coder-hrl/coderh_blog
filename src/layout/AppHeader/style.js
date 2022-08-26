@@ -6,6 +6,11 @@ export const AppHeaderSwpper = styled.div`
 
   h2 {
     color: white;
+    width: 400px;
     margin-right: 40px;
+    cursor: pointer;
+  }
+  .menu {
+    flex: 1;
   }
 `
