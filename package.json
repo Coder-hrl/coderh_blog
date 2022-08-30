@@ -29,7 +29,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "cz": "git add . && git cz && git push && git push gitee"
+    "cz": "git add . && git cz && gp"
   },
   "eslintConfig": {
     "extends": [
