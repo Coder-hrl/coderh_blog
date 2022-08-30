@@ -1,6 +1,7 @@
 import React from 'react'
 
 import AppSwpper from './style'
+import config from './index.config'
 import H2 from './components/H2'
 import actvor from '../../assets/img/actvor.jpeg'
 
@@ -24,15 +25,31 @@ function Home() {
       <div className="main-right">
         <div className="person_box">
           <div className="area">
-            <H2 title="技术栈" />
+            <H2 title="技术栈" type="h2" />
             <ul>
-              <li>熟悉React和Vue开发</li>
-              <li>熟悉Webpack各项配置</li>
-              <li>熟悉NodeJS框架Express和Koa</li>
+              {config.technology.map((item) => {
+                return <li>{item}</li>
+              })}
             </ul>
           </div>
           <div className="area">
-            <H2 title="项目展示"></H2>
+            <H2 title="项目展示" type="h2"></H2>
+            {config.projectList.map((item) => {
+              return (
+                <>
+                  <H2 title={item.title} type="h3" />
+                  <ol>
+                    {item.list.map((item) => {
+                      return (
+                        <li>
+                          <a href={item.herf}>{item.label}</a>
+                        </li>
+                      )
+                    })}
+                  </ol>
+                </>
+              )
+            })}
           </div>
         </div>
       </div>

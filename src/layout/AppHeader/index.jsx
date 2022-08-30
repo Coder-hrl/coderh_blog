@@ -7,13 +7,14 @@ import { routes } from '../../router/router.config'
 
 function AppHeader() {
   const navigate = useNavigate()
-  const selectRoute = (item, key, keyPath) => {
+  const selectRoute = (item, key, keyPath, selectedKeys) => {
     navigate(`${item.key}`)
+    console.log(selectedKeys)
   }
 
   return (
     <AppHeaderSwpper>
-      <h2 onClick={() => navigate('Home')}>coderh个人博客</h2>
+      <h2 onClick={() => navigate('Home')}>Coderh Personal Blog</h2>
       <Menu
         className="menu"
         theme="dark"
