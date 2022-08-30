@@ -10,6 +10,7 @@ const H2Swpper = styled(common)`
   border-bottom: 1px solid #1177b0;
 `
 const H3Swpper = styled(common)`
+  margin-left: 15px;
   font-size: 18px;
   color: #1772b4;
 `

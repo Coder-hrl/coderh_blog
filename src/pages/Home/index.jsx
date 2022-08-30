@@ -27,8 +27,8 @@ function Home() {
           <div className="area">
             <H2 title="技术栈" type="h2" />
             <ul>
-              {config.technology.map((item) => {
-                return <li>{item}</li>
+              {config.technology.map((item, index) => {
+                return <li key={index}>{item}</li>
               })}
             </ul>
           </div>
@@ -36,18 +36,18 @@ function Home() {
             <H2 title="项目展示" type="h2"></H2>
             {config.projectList.map((item) => {
               return (
-                <>
+                <div key={item.title}>
                   <H2 title={item.title} type="h3" />
                   <ol>
                     {item.list.map((item) => {
                       return (
-                        <li>
+                        <li key={item.label}>
                           <a href={item.herf}>{item.label}</a>
                         </li>
                       )
                     })}
                   </ol>
-                </>
+                </div>
               )
             })}
           </div>
