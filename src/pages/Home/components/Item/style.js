@@ -29,8 +29,7 @@ const ItemSwpper = styled.div`
   }
   .title {
     font-size: 18px;
-    color: red;
-    font-weight: bold;
+    color: #20a162;
   }
   .technical {
     font-size: 15px;
@@ -39,7 +38,7 @@ const ItemSwpper = styled.div`
     flex-wrap: wrap;
     .tech-item {
       margin: 0 5px;
-      color: green;
+      color: #83cbac;
     }
   }
   .desc {

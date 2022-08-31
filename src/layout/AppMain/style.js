@@ -5,7 +5,7 @@ export const AppMainSwpper = styled.div`
   /* min-height: 620px; */
   height: calc(100vh - 90px - 60px);
   overflow: auto;
-  border-radius: 30px;
+  border-radius: 15px;
   background-color: #eeeeee;
   margin: 0 auto;
 `
