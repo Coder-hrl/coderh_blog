@@ -8,6 +8,6 @@ const userSlice = createSlice({
   reducers: {},
 })
 
-export const {} = userSlice.actions
+// export const {} = userSlice.actions
 
 export default userSlice.reducer

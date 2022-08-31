@@ -42,7 +42,9 @@ function Home() {
                     {item.list.map((item) => {
                       return (
                         <li key={item.label}>
-                          <a href={item.herf}>{item.label}</a>
+                          <a href={item.herf} target="_blank" rel="noreferrer">
+                            {item.label}
+                          </a>
                         </li>
                       )
                     })}
