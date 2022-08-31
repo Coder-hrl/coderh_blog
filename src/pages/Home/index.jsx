@@ -3,7 +3,8 @@ import React from 'react'
 import AppSwpper from './style'
 import config from './index.config'
 import H2 from './components/H2'
-import actvor from '../../assets/img/actvor.jpeg'
+import CoItem from './components/Item'
+import actvor from '@/assets/img/Home/avctor.jpeg'
 
 function Home() {
   return (
@@ -24,7 +25,7 @@ function Home() {
       </div>
       <div className="main-right">
         <div className="person_box">
-          <div className="area">
+          <div className="tech-area">
             <H2 title="技术栈" type="h2" />
             <ul>
               {config.technology.map((item, index) => {
@@ -34,24 +35,19 @@ function Home() {
           </div>
           <div className="area">
             <H2 title="项目展示" type="h2"></H2>
-            {config.projectList.map((item) => {
-              return (
-                <div key={item.title}>
-                  <H2 title={item.title} type="h3" />
-                  <ol>
-                    {item.list.map((item) => {
-                      return (
-                        <li key={item.label}>
-                          <a href={item.herf} target="_blank" rel="noreferrer">
-                            {item.label}
-                          </a>
-                        </li>
-                      )
-                    })}
-                  </ol>
-                </div>
-              )
-            })}
+            <div className="co-item">
+              {config.projectList.map((item) => {
+                return (
+                  <CoItem
+                    key={item.title}
+                    img={item.img}
+                    title={item.title}
+                    technical={item.technical}
+                    desc={item.desc}
+                  />
+                )
+              })}
+            </div>
           </div>
         </div>
       </div>

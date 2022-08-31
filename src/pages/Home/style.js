@@ -5,7 +5,7 @@ const HomeWrapper = styled.div`
   height: inherit;
 
   .main-left {
-    flex: 1;
+    width: 500px;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -44,9 +44,21 @@ const HomeWrapper = styled.div`
     flex: 1;
     .person_box {
       margin-top: 30px;
-      .area {
+      .tech-area {
         ul {
-          font-size: 16px;
+          margin-left: 20px;
+          background-color: #fff;
+          li {
+            color: #2f90b9;
+            font-size: 16px;
+          }
+        }
+      }
+      .area {
+        .co-item {
+          margin-left: 20px;
+          display: flex;
+          justify-content: space-between;
         }
       }
     }

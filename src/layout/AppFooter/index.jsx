@@ -12,7 +12,7 @@ function AppFooter() {
         <span>如果你想更好的了解我,不妨可以来这里看看</span>
         <a href="https://github.com/Coder-hrl" target="_blank" rel="noreferrer">
           <img src={github} alt="github" width="16" height="16" />
-          Github
+          Github{' '}
         </a>
         <a
           href="https://gitee.com/huangruilin"
@@ -20,15 +20,22 @@ function AppFooter() {
           rel="noreferrer"
         >
           <img src={gitee} alt="gitee" width="16" height="16" />
-          Gitee
+          Gitee{' '}
         </a>
-        <a href="https://github.com/Coder-hrl" target="_blank" rel="noreferrer">
+        <a
+          href="https://juejin.cn/user/2929541598425223"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={juejin} alt="juejin" width="16" height="16" />
-          掘金
+          掘金{' '}
         </a>
       </div>
       <div className="footer-bottom">
-        备案号: <a href="https://beian.miit.gov.cn/">冀ICP备2022003537号-1</a>
+        备案号:{' '}
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">
+          冀ICP备2022003537号-1
+        </a>
       </div>
     </AppFooterSwpper>
   )

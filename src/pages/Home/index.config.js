@@ -1,3 +1,5 @@
+import blog_img from '@/assets/img/Home/coderh-blog.png'
+
 const config = {
   technology: [
     '熟悉React和Vue开发',
@@ -7,17 +9,19 @@ const config = {
   ],
   projectList: [
     {
-      title: 'React',
-      list: [{ label: 'Coderh个人博客', herf: 'https://www.coderh.cn' }],
+      title: 'Coderh个人博客',
+      img: blog_img,
+      technical: ['React', 'ReduxJs/tookit', 'ReactRouter6', 'Antd框架'],
+      desc: '用于知识分享和React技术练习',
     },
-    {
-      title: 'Vue(暂无)',
-      list: [],
-    },
-    {
-      title: 'Koa(暂无)',
-      list: [],
-    },
+    // {
+    //   title: 'Vue(暂无)',
+    //   list: [],
+    // },
+    // {
+    //   title: 'Koa(暂无)',
+    //   list: [],
+    // },
   ],
 }
 
