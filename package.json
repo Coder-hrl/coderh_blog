@@ -12,6 +12,7 @@
     "antd": "^4.22.6",
     "axios": "^0.27.2",
     "commitizen": "^4.2.5",
+    "github-markdown-css": "^5.1.0",
     "moment": "^2.29.4",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",

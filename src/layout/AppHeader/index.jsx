@@ -28,7 +28,7 @@ function AppHeader() {
       <h2 onClick={selectHome}>Coderh Personal Blog</h2>
       <Menu
         className="menu"
-        theme="dark"
+        theme="light"
         mode="horizontal"
         items={routes}
         selectedKeys={selectedKeys}

@@ -6,6 +6,8 @@ const HomeWrapper = styled.div`
 
   .main-left {
     width: 500px;
+    min-height: 600px;
+    height: 100%;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -13,6 +15,7 @@ const HomeWrapper = styled.div`
     .person_box {
       width: 400px;
       height: 400px;
+      margin-top: 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
