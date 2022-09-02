@@ -1,5 +1,5 @@
 export const routes = [
-  { label: '首页', key: 'Home' },
+  { label: '首页', key: 'home' },
   { label: 'Js(基本功)', key: 'js' },
   { label: 'Css(画世界)', key: 'css' },
   { label: 'React(手动挡)', key: 'react' },

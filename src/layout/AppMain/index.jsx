@@ -13,7 +13,7 @@ function AppMain() {
     <AppMainSwpper>
       <div
         className={
-          pathname === '/Home' ? 'common has-footer' : 'common no-footer'
+          pathname === '/home' ? 'common has-footer' : 'common no-footer'
         }
       >
         <Suspense fallback={<>加载中,请稍后...</>}>{element}</Suspense>

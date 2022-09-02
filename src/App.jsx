@@ -19,7 +19,7 @@ function App() {
         <Content>
           <AppMain />
         </Content>
-        {pathname === '/Home' ? (
+        {pathname === '/home' ? (
           <Footer>
             <AppFooter />
           </Footer>

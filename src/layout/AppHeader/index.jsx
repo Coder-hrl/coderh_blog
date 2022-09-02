@@ -14,8 +14,8 @@ function AppHeader() {
   }
 
   const selectHome = () => {
-    navigate('Home')
-    setSelectedKeys(['Home'])
+    navigate('home')
+    setSelectedKeys(['home'])
   }
   useEffect(() => {
     // 使用replaceAll,将/Home之前的/移除掉
