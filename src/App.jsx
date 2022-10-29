@@ -1,15 +1,12 @@
 import { Layout } from 'antd'
 import React from 'react'
-import { useLocation } from 'react-router-dom'
 
 import AppHeader from './layout/AppHeader'
 import AppMain from './layout/AppMain'
-import AppFooter from './layout/AppFooter'
 
-const { Header, Footer, Content } = Layout
+const { Header, Content } = Layout
 
 function App() {
-  const { pathname } = useLocation()
   return (
     <>
       <Layout>
@@ -19,13 +16,6 @@ function App() {
         <Content>
           <AppMain />
         </Content>
-        {pathname === '/home' ? (
-          <Footer>
-            <AppFooter />
-          </Footer>
-        ) : (
-          ''
-        )}
       </Layout>
     </>
   )
