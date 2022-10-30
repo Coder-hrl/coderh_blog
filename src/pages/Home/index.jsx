@@ -52,35 +52,38 @@ function Home() {
               })}
             </div>
           </div>
-          <div className="footer-top">
+          <div className="footer">
             <span>如果你想更好的了解我,不妨可以来这里看看</span>
             <a
               href="https://github.com/Coder-hrl"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={github} alt="github" width="16" height="16" />
-              Github{' '}
+              <img src={github} alt="github" width="20" height="20" />
+              Github
             </a>
             <a
               href="https://gitee.com/huangruilin"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={gitee} alt="gitee" width="16" height="16" />
-              Gitee{' '}
+              <img src={gitee} alt="gitee" width="20" height="20" />
+              Gitee
             </a>
             <a
               href="https://juejin.cn/user/2929541598425223"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={juejin} alt="juejin" width="16" height="16" />
-              掘金{' '}
+              <img src={juejin} alt="juejin" width="20" height="20" />
+              掘金
+            </a>
+            <a href="http://blog.coderh.cn" target="_blank" rel="noreferrer">
+              个人博客
             </a>
           </div>
           <div className="footer-bottom">
-            备案号:{' '}
+            备案号:
             <a
               href="https://beian.miit.gov.cn/"
               target="_blank"

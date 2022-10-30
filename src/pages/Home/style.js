@@ -45,6 +45,7 @@ const HomeWrapper = styled.div`
   }
   .main-right {
     flex: 1;
+    position: relative;
     .person_box {
       margin-top: 30px;
       .tech-area {
@@ -64,6 +65,28 @@ const HomeWrapper = styled.div`
           justify-content: space-between;
         }
       }
+    }
+    .footer {
+      position: absolute;
+      bottom: 25px;
+      left: 40px;
+      margin-top: 30px;
+      font-size: 18px;
+      display: flex;
+      a {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 6px;
+        }
+      }
+    }
+    .footer-bottom {
+      font-size: 18px;
+      position: absolute;
+      bottom: 0;
+      left: 40px;
     }
   }
 `
