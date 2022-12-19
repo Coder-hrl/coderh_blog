@@ -1,13 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import AppSwpper from './style'
 import config from './index.config'
 import H2 from './components/H2'
 import CoItem from './components/Item'
 import actvor from '@/assets/img/Home/avctor.jpeg'
-import github from '@/assets/img/github.png'
-import gitee from '@/assets/img/gitee.png'
-import juejin from '@/assets/img/juejin.png'
 
 function Home() {
   return (
@@ -54,33 +51,23 @@ function Home() {
           </div>
           <div className="footer">
             <span>如果你想更好的了解我,不妨可以来这里看看</span>
-            <a
-              href="https://github.com/Coder-hrl"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={github} alt="github" width="20" height="20" />
-              Github
-            </a>
-            <a
-              href="https://gitee.com/huangruilin"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={gitee} alt="gitee" width="20" height="20" />
-              Gitee
-            </a>
-            <a
-              href="https://juejin.cn/user/2929541598425223"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={juejin} alt="juejin" width="20" height="20" />
-              掘金
-            </a>
-            <a href="http://blog.coderh.cn" target="_blank" rel="noreferrer">
-              个人博客
-            </a>
+            <div className="footer-main">
+              {config.mine_herfList.map((item) => (
+                <Fragment>
+                  <a href={item.herf} target="_blank" rel="noreferrer">
+                    {item.img_src && (
+                      <img
+                        src={item.img_src}
+                        alt={item.title}
+                        width="20"
+                        height="20"
+                      />
+                    )}
+                    {item.title}
+                  </a>
+                </Fragment>
+              ))}
+            </div>
           </div>
           <div className="footer-bottom">
             备案号:

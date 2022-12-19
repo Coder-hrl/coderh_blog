@@ -68,25 +68,30 @@ const HomeWrapper = styled.div`
     }
     .footer {
       position: absolute;
-      bottom: 25px;
+      bottom: 10px;
       left: 40px;
       margin-top: 30px;
       font-size: 18px;
       display: flex;
-      a {
-        margin-left: 10px;
+      flex-direction: column;
+      .footer-main {
         display: flex;
-        align-items: center;
-        img {
-          margin-right: 6px;
+        margin-top: 20px;
+        a {
+          margin-left: 10px;
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 6px;
+          }
         }
       }
     }
     .footer-bottom {
       font-size: 18px;
       position: absolute;
-      bottom: 0;
-      left: 40px;
+      bottom: 10px;
+      right: 5px;
     }
   }
 `
