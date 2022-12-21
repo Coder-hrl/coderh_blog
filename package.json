@@ -31,7 +31,8 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "cz": "git add . && git cz && git push && git push gitee"
+    "cz": "git add . && git cz && git push && git push gitee",
+    "deploy": "node ./deploy"
   },
   "eslintConfig": {
     "extends": [
@@ -53,7 +54,13 @@
   },
   "devDependencies": {
     "craco-sass-resources-loader": "^1.1.0",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "chalk": "^4.1.2",
+    "compressing": "^1.6.2",
+    "inquirer": "^8.1.4",
+    "node-ssh": "^13.0.0",
+    "ora": "^5.1.2",
+    "shelljs": "^0.8.5"
   },
   "config": {
     "commitizen": {
