@@ -33,7 +33,7 @@ const config = {
     },
     {
       title: '个人博客',
-      herf: 'http://blog.coderh.cn',
+      herf: 'https://blog.coderh.cn',
       img_src: null,
     },
   ],
