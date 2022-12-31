@@ -1,5 +1,3 @@
-import blog_img from '@/assets/img/Home/coderh-blog.png'
-
 const config = {
   technology: [
     '熟悉React和Vue开发',
@@ -9,10 +7,10 @@ const config = {
   ],
   projectList: [
     {
-      title: 'Coderh个人博客',
-      img: blog_img,
-      technical: ['React', 'ReduxJs/tookit', 'ReactRouter6', 'Antd框架'],
-      desc: '用于知识分享和React技术练习',
+      title: 'Coderh博客',
+      img: require('@/assets/img/Home/coderh-blog.png'),
+      technical: ['Vue Press'],
+      desc: '用于个人知识记录和知识分享',
     },
   ],
   mine_herfList: [

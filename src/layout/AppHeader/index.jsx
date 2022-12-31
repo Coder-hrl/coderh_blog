@@ -12,7 +12,7 @@ function AppHeader() {
 
   return (
     <AppHeaderSwpper>
-      <h2 onClick={selectHome}>Coderh Personal Blog</h2>
+      <h2 onClick={selectHome}>Coderh Personal Introduction</h2>
     </AppHeaderSwpper>
   )
 }
